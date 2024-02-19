@@ -1,0 +1,56 @@
+body{
+    border: 10px;
+    border-width: 5px;
+    border-color: red;
+    border-style: solid;
+    color: cornflowerblue; 
+    background-color: rgba(10, 10, 10, 0.901);}
+
+/*Todo lo que va aquí es un comentario*/
+h1{
+    color: aqua;
+}
+.lorem{
+    color: aquamarine;
+    text-align: left;
+}
+
+.descripcion{
+    border: 10px;
+    border-color: turquoise;
+    border-style: solid;
+    /*Arriba Abajo - Derecha Izquierda*/
+    /*Arriba - Derecha - Abajo - Izquierda*/
+    margin: 20px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+
+/* Fuentes */
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+} 
