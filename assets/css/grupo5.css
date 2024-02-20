@@ -1,0 +1,35 @@
+body{
+    border: 10px;
+    border-width: 5px;
+    border-color: rgb(55, 0, 255);
+    border-style: inset none none inset;
+    color: rgb(253, 254, 255); 
+    background-color: rgba(6, 75, 102, 0.918);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+.center{
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    text-align: center;
+}
+h1{
+    color: aqua;
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+img{
+    max-width: 278px;
+    height: auto;
+    clip-path: circle();
+}
+a:link {
+    color: rgb(243, 39, 90);
+}
+a:visited {
+color: rgb(209, 98, 219);
+}  
