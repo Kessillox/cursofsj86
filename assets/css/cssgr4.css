@@ -16,12 +16,7 @@ h2 {
     text-align: center;
 }
 
-.imagen {
-    text-align: center;
-    margin: auto;
-}
-
-div {
+.info {
     background-color: #bed1f0;
     padding: 10px;
     border: 5px solid #a8b08a;
@@ -29,7 +24,10 @@ div {
 }
 
 .imagen {
-    height: auto;
+    border: 5px solid #a8b08a;
+    text-align: center;
+    margin: auto;
+    height: 50%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
