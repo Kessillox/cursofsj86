@@ -37,3 +37,55 @@ img {
     height: 20%;
     width: 20%;
 }
+
+.caja1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 5px solid #a0cb20;
+    padding: 5cqmax;
+    margin-top: 3cm;
+    background-color: rgb(179, 192, 40);
+}
+
+.caja2 {
+    font-family: 'Courier New', Courier, monospace;
+    border: 5px solid #e5d252;
+    padding: 0.5cm;
+    margin-top: 0.5cm;
+    background-color: #dc9ed4;
+}
+
+.caja3 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 5px solid #cab938;
+    padding: 0.5cm;
+    margin-top: 0.5cm;
+    background-color: rgb(158, 196, 230);
+}
+
+.caja4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 5px solid #714724;
+    padding: 0.5cm;
+    margin-top: 0.5cm;
+    background-color: #c86819;
+}
+
+.caja5 {
+    font-family: 'Times New Roman', Times, serif;
+    border: 5px solid #a3c140;
+    padding: 0.5cm;
+    margin-top: 0.5cm;
+    background-color: #6bed14;
+}
+
+.annapurna-sil-regular {
+    font-family: "Annapurna SIL", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.annapurna-sil-bold {
+    font-family: "Annapurna SIL", serif;
+    font-weight: 700;
+    font-style: normal;
+}
