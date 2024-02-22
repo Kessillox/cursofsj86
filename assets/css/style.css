@@ -10,11 +10,11 @@ body{
 h1{
     color: aqua;
 }
-.lorem{
-    color: aquamarine;
-    text-align: left;
+.header{
+    border: 5px;
+    border-style: solid;
+    border-color: blue;
 }
-
 .descripcion{
     border: 10px;
     border-color: turquoise;
@@ -22,9 +22,64 @@ h1{
     /*Arriba Abajo - Derecha Izquierda*/
     /*Arriba - Derecha - Abajo - Izquierda*/
     margin: 20px;
-    padding: 15px;
+    padding: 70px 25px 30px 10px;
     border-radius: 15px;
 }
+.cajasect{
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(189, 226, 67);
+    margin: 50px 25px 30px 10px;
+    display: block;
+}
+.div1{
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(189, 226, 67);
+    margin: 50px 25px 30px 10px;
+    width: 30%;
+    display: inline-flex;
+}
+.div2{
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(65, 186, 54);
+    margin: 50px 25px 30px 10px;
+    width: 30%;
+    display: inline-flex;
+    
+}
+.div3{
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(72, 135, 199);
+    
+}
+.div4{
+    border: 5px;
+    border-style: solid;
+    border-color: rebeccapurple;
+    
+}
+
+.grupos{
+    border: 5px;
+    border-style: solid;
+    border-color: rebeccapurple;
+    margin: 50px 25px 30px 10px;
+}
+
+.footer{
+    border: 5px;
+    border-style: solid;
+    border-color: green;
+}
+.lorem{
+    color: aquamarine;
+    text-align: left;
+}
+
+
 
 
 /* Fuentes */
@@ -54,3 +109,17 @@ h1{
     font-weight: 300;
     font-style: italic;
 } 
+
+.montserrat-black {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.montserrat-regular {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}  
