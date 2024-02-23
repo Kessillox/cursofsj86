@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>Grupo 2</title>
-    <style>
+    
+    <style>  
         table {
             width: 100%;
             border-collapse: collapse;
@@ -12,76 +17,175 @@
         }
 
         th, td {
-            border: 1px solid #dddddd;
+            border: 3px solid #dddddd;
             text-align: left;
-            padding: 8px;
+            padding: 5px;
         }
 
         th {
             background-color: #f2f2f2;
         }
+
+        /*ESTILO PARA CADA PERSONA */
+        .person-container {
+            border: 5px solid #ccc;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        /* ESTILO PARA LAS IMAGENES */
+        .person-container img {
+            max-width: 100%;
+            height: auto;
+            opacity: 0.8;
+        }
     </style>
+
+<script>
+    // Ensure the script is placed after the DOM content
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get all images within the person-container
+        var images = document.querySelectorAll('.person-container img');
+
+        // Add event listeners for each image
+        images.forEach(function (image) {
+            image.addEventListener('mouseover', function () {
+                // Scale the image on hover
+                this.style.transform = 'scale(1.2)';
+            });
+
+            image.addEventListener('mouseout', function () {
+                // Restore the original size on mouseout
+                this.style.transform = 'scale(1)';
+            });
+        });
+    });
+</script>
 </head>
 <body>
 
     <h1>Mi Página con Tabla</h1>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Nombre alumno</th>
-                <th>Perfil</th>
-                <th>Git</th>
-                <th>LinkedIn</th>
-                <th>Notion</th>
-                <th>Descripcion</th>
-            </tr>
-        </thead>
+    <!-- CONTAINER DE LOS INDICES DE LAS PERSONAS -->
+    <div class="person-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre alumno</th>
+                    <th>Perfil</th>
+                    <th>Git</th>
+                    <th>LinkedIn</th>
+                    <th>Notion</th>
+                    <th>Descripcion</th>
+                    <th>Contacto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Christian Mc Farlan Rebolledo</td>
+                    <td><a class="navbar-brand" href="#">
+                        <img src="https://educartechnology.cl/wp-content/uploads/2024/02/Image20240221114725.jpg" alt="foto Christian Farlan"></a>
+                    </td>
+                    <!-- LINCK ORDENADOS PARA CADA PERSONA, PARTO POR EL WEA -->
+                    <td><a href="https://github.com/educartechnology" target="_blank">Enlace Git</a></td>
+                    <td><a href="https://www.linkedin.com/in/christian-mc-farlan-rebolledo-7397522b3/" target="_blank">Enlace LinkedIn</a></td>
+                    <td><a href="https://www.notion.so/Primeros-pasos-7d89451857a241d9af27b600dcbf3526" target="_blank">Enlace Notion</a></td>
+                    <td><p>Hola, soy desarrollador amateur hace 3 años, actualmente desarrollo en FluterFlow con NOCODE, trabajo independiente con nuevas APP.</p> </td>
+                    <td>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="cambiarContenido
+                        ('Christian Mc Farlan Rebolledo')"> Contactar Usuario</button> 
+                    </td>
+                </tr>
+                
         <tbody>
-            <tr>
-                <td>Christian Mc Farlan Rebolledo</td>
-                <td><a class="navbar-brand" href="#">
-                    <img src="https://educartechnology.cl/wp-content/uploads/2024/02/Image20240221114725.jpg" alt="logo" width="150px" height="100px" style="opacity: 0.8;">
-                </a></td>
-                <td><a href="https://github.com/educartechnology" target="_blank">Enlace Git</a></td>
-                <td><a href="https://www.linkedin.com/in/christian-mc-farlan-rebolledo-7397522b3/" target="_blank">Enlace LinkedIn</a></td>
-                <td><a href="https://www.notion.so/Primeros-pasos-7d89451857a241d9af27b600dcbf3526" target="_blank">Enlace Notion</a></td>
-                <td><p>Hola, soy desarrollador amateur hace 3 años, actualmente desarrollo en FluterFlow con NOCODE, trabajo independiente con nuevas APP.</p> </td>
-            </tr>
-            <tr>
-                <td>Nayareth Sepulveda</td>
-                <td><a class="navbar-brand" href="#">
-                    <img src="https://educartechnology.cl/wp-content/uploads/2024/02/yo.jpg" alt="logo" width="150px" height="100px" style="opacity: 0.8;">
-                </a></td>
-                <td><a href="https://github.com/nayashunga/naya" target="_blank">Enlace Git</a></td>
-                <td><a href="https://www.linkedin.com/in/naya-sepulveda-3876062a7/" target="_blank">Enlace LinkedIn</a></td>
-                <td><a href="https://notion.so/cd918ac3548c46ed9dc92ed69e0c2803?v=21fda31f38eb4518a64ce8c675864691" target="_blank">Enlace Notion</a></td>
-                <td><p>Profesional con capacidades diferentes altamente motivada y versátil, con amplia experiencia en atencion al cliente
-                    presencial y telefonica. Demostrando habilidades sobresalientes de adaptabilidad, resolución de problemas y trabajo en
-                    equipo, junto con un enfoque positivo y optimista..</p> </td>
-            </tr>
-            <tr>
-                <td>Maribel Zambrano</td>
-                <td><a class="navbar-brand" href="#">
-                    <img src="https://educartechnology.cl/wp-content/uploads/2024/02/Image20240221114334.jpg" alt="logo" width="150px" height="100px" style="opacity: 0.8;">
-                </a></td>
-                <td><a href="https://github.com/mariczc" target="_blank">Enlace Git</a></td>
-                <td><a href="https://www.linkedin.com/in/maribel-z-c-96972b216?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Enlace LinkedIn</a></td>
-                <td><a href="https://www.notion.so/Primeros-pasos-3c4fddc9473d4229a25a057168384ede" target="_blank">Enlace Notion</a></td>
-                <td><p>Maribel Zambrano soy vendedora en puestos de ferias hace 7 años, gracias a esto tengo bastante experiencia atendiendo publico, todo esto me lo pudo enseñar kpop diseño chile. Soy una persona muy proactiva y motivada a aprender..</p> </td>
-            </tr>
-            <tr>
-                <td>Elena Casanova</td>
-                <td><a class="navbar-brand" href="#">
-                    <img src="https://educartechnology.cl/wp-content/uploads/2024/02/Image20240221114659.jpg" alt="logo" width="150px" height="100px" style="opacity: 0.8;">
-                </a></td>
-                <td><a href="https://github.com/ELENA-CASANOVA" target="_blank">Enlace Git</a></td>
-                <td><a href="https://www.linkedin.com/feed/?trk=404_page" target="_blank">Enlace LinkedIn</a></td>
-                <td><a href="https://www.notion.so/S-c1fcaed5c9824a9181a337af9b6f1aa2" target="_blank">Enlace Notion</a></td>
-                <td><p>Administrativa con experiencia de mas de 10 años en cargos como asistente administrativa, secretaria, atención al cliente y con conocimientos básicos de contabilidad, computación nivel intermedio. A lo largo de estos años he desarrollado aptitudes comunicacionales para gestionar la atención al cliente vía telefónica como presencial, trabajo en equipo. Busco capacitarme el área de desarrollo web y continuar aprendiendo nuevas especialidades, mientras contribuyo con mi experiencia técnica y mis habilidades interpersonales.</p> </td>
-            </tr>
-        </tbody>
-    </table>
+                <tr>
+                    <td>Nayareth Sepulveda</td>
+                    <td><a class="navbar-brand" href="#">
+                        <img src="https://educartechnology.cl/wp-content/uploads/2024/02/yo.jpg" alt="logo">
+                    </a></td>
+                    <!-- LINCK ORDENADOS PARA CADA PERSONA, PARTO POR EL WEA -->
+                    <td><a href="https://github.com/nayashunga/naya" target="_blank">Enlace Git</a></td>
+                    <td><a href="https://www.linkedin.com/in/naya-sepulveda-3876062a7//" target="_blank">Enlace LinkedIn</a></td>
+                    <td><a href="https://notion.so/cd918ac3548c46ed9dc92ed69e0c2803?v=21fda31f38eb4518a64ce8c675864691" target="_blank">Enlace Notion</a></td>
+                    <td><p>Profesional con capacidades diferentes altamente motivada y versátil, con amplia experiencia en atencion al cliente
+                        presencial y telefonica. Demostrando habilidades sobresalientes de adaptabilidad, resolución de problemas y trabajo en
+                        equipo, junto con un enfoque positivo y optimista</p>
+                        <td> <!-- Botón que activa el modal con datos específicos -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="cambiarContenido
+                    ('Nayareth Sepulveda')"> Contactar Usuario</button></td>
+                </tr>
+            </tbody>
 
+            <tbody>
+                <tr>
+                    <td>Maribel Zambrano</td>
+                    <td><a class="navbar-brand" href="#">
+                        <img src="https://educartechnology.cl/wp-content/uploads/2024/02/Image20240221114334.jpg" alt="logo">
+                    </a></td>
+                    <!-- LINCK ORDENADOS PARA CADA PERSONA, PARTO POR EL WEA -->
+                    <td><a href="https://github.com/mariczc" target="_blank">Enlace Git</a></td>
+                    <td><a href="https://www.linkedin.com/in/maribel-z-c-96972b216?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Enlace LinkedIn</a></td>
+                    <td><a href="https://www.notion.so/Primeros-pasos-3c4fddc9473d4229a25a057168384ede" target="_blank">Enlace Notion</a></td>
+                    <td><p>Soy vendedora en puestos de ferias hace 7 años, gracias a esto tengo bastante experiencia atendiendo
+                        publico, todo esto me lo pudo enseñar kpop diseño chile. Soy una persona muy proactiva y motivada a aprender</p>
+                    <td> <!-- Botón que activa el modal con datos específicos -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="cambiarContenido
+                        ('Maribel Zambrano')"> Contactar Usuario</button>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <td>Elena Casanova</td>
+                    <td><a class="navbar-brand" href="#">
+                        <img src="https://educartechnology.cl/wp-content/uploads/2024/02/Image20240221114659.jpg" alt="logo">
+                    </a></td>
+                    <!-- LINCK ORDENADOS PARA CADA PERSONA, PARTO POR EL WEA -->
+                    <td><a href="https://github.com/ELENA-CASANOVA" target="_blank">Enlace Git</a></td>
+                    <td><a href="https://www.linkedin.com/feed/?trk=404_page" target="_blank">Enlace LinkedIn</a></td>
+                    <td><a href="https://www.notion.so/S-c1fcaed5c9824a9181a337af9b6f1aa2" target="_blank">Enlace Notion</a></td>
+                    <td><p>Profesional con experiencia de mas de 10 años en cargos como: asistente administrativa, secretaria, 
+                        atención al cliente, con conocimientos básicos de contabilidad, computación nivel intermedio. 
+                        Busco capacitarme el área de desarrollo web y continuar aprendiendo nuevas especialidades,
+                        mientras contribuyo con mi experiencia técnica y mis habilidades interpersonales.</p>
+                        <!-- Botón que activa el modal con datos específicos -->
+                    
+                <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="cambiarContenido
+                    ('Elena Casanova')"> Contactar Usuario</button></td>
+            </tbody>
+            <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- CONTENIDO FORMULARIO -->
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+            
+            
+            
+            </tbody>
+        </table>
+    </div>
+
+    <!-- AQUI COLOCO LOS DEMAS -->
+    <script>
+        function cambiarContenido(contenido) {
+            // Cambiar el contenido del modal
+            document.getElementById('modalBody').innerHTML = contenido;
+        }
+    </script>
 </body>
 </html>
