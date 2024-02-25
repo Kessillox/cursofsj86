@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    font-weight:bold;
+    /* padding:15px; */
+    border:2px solid rgb(114, 116, 114);
+    background-color:rgb(217, 219, 217);
+    margin-top:50px;
+    margin-bottom:20px;
+    border-radius:10px; 
+    color: white;
+    padding:12px;
+}
+
+footer mark {
+    color:gray;
+}    
+
+mark {
+    /* border:2px solid; */
+    background-color: yellow;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* EJERCICIOS CON CAJAS */
+
+.caja_footer2 {
+    padding: 20px;
+    font-weight:bold;
+    border:2px solid;
+    margin: 12px;
+}
+
+.caja_principal {
+    padding: 10px;
+    font-weight:bold;
+    border:2px solid;
+    background-color: #bef3e3;
+    border-radius:10px; 
+    display:flex;
+}
+
+/*
+        body {
+            background-color: rgb(201, 203, 201);
+            font-family:Arial;
+            margin-left: 5%;}
+
+        h1 {
+            color: black;}
+        
+        hr {
+            color:white;}    
+
+        footer p {
+            color:white;}
+
+        footer {
+            color:white;
+            font-weight:bold;
+            padding:15px;
+            border:3px solid rgb(255, 252, 255);
+            background-color: rgb(114, 116, 114);
+            margin-top:50px;
+            margin-bottom:20px;
+            border-radius:10px; 
+            color: white;}
+        img {
+            border-radius:10px;
+        }    
+
+*/
