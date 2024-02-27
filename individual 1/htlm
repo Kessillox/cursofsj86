@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tu patito de hule</title>
+</head>
+<body>
+    <header>
+        <h1>Patito De Hule</header>
+    <nav>
+        <ul>
+            <li><a href="#historia">Historia del Negocio</a></li>
+            <li><a href="#ubicacion">Ubicación y Sucursales</a></li>
+            <li><a href="#productos">Productos y Servicios</a></li>
+        </ul>
+    </nav>   
+
+    <section id="historia">
+        <h2>BEn la ciudad de Vallenar, vivía una niña con problemas para sociabilizar. A pesar de su dulzura le costaba conectar con otras personas y hacer amigos. Sin embargo, todo cambió el día de su décimo cumpleaños, cuando recibió un regalo muy especial: un pequeño patito amarillo.
+            Este patito, al que llamó cariñosamente Pato Cuak, se convirtió en su inseparable compañero desde el momento en que lo recibió. La joven cuidaba de él con ternura y lo amaba con todo su corazón. Juntos compartieron innumerables aventuras y momentos de felicidad.
+            Pato Cuak la acompañaba a todas partes, lo que generaba curiosidad y acercaba a las personas, incluso a niños de su misma edad. Poco a poco, sin darse cuenta, el patito se convirtió en un puente que ayudó a la joven a abrirse al mundo y a hacer nuevos amigos.
+            La niña creció y se convirtió en una mujer, pero los mejores recuerdos de su infancia siempre estuvieron ligados a Pato Cuak. Reconociendo la increíble influencia que su amigo emplumado había tenido en su vida, decidió honrar su memoria de la mejor manera posible.
+            Así nació la idea de abrir una tienda de curiosidades con formas de patitos, donde pudiera compartir con el mundo la misma felicidad y alegría que Pato Cuak le había brindado a lo largo de los años. Con dedicación y pasión, la joven convirtió su sueño en realidad, creando un lugar donde la magia de la infancia y la amistad perduraban para siempre.
+            Y así, gracias al amor y la complicidad entre una niña y su patito amarillo, comenzó la historia de un negocio minorista de patitos de hule que no solo vendía productos, sino que también compartía la esencia misma de la felicidad y la amistad.</h2>
+        <p>TU Patito de Hule, fue fundada en 20024</p>
+        <p>Fundadores: Karla cortes</p>
+        <img src="url_de_la_imagen" alt="Imagen de la historia del negocio">
+    </section>
+
+    <section id="ubicacion">
+        <h2>Ubicación y Sucursales</h2>
+        <p>Descripción de la ubicación y las sucursales.</p>
+        <img src="url_de_la_imagen" alt="Imagen de la ubicación y sucursales">
+    </section>
+
+    <section id="productos">
+        <h2>Productos y Servicios</h2>
+        <p>Descripción de los productos que venden y los servicios que entregan.</p>
+        <img src="url_de_la_imagen" alt="Imagen de los productos y servicios">
+    </section>
+
+    <footer>
+        <h3>Referencias</h3>
+        <ul>
+            <li><a href="enlace1">Enlace 1</a></li>
+            <li><a href="enlace2">Enlace 2</a></li>
+            <li><a href="enlace3">Enlace 3</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+
