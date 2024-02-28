@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- nuevo obligatorio incluirlo -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <title>Grupo3</title>
+    <link rel="stylesheet" href="../css/grupo3.css">
+    
+</head>
+<body>
+    <header>
+        <h1 style="color:rgb(255, 255, 255);">Trabajo Grupo 3</h1>
+        <hr>
+        <br>
+
+        <h2>integrantes <span onclick="return oculta_muestra();" style="margin-left: 1rem;margin-bottom:1rem;";><input id='submit-param' type="submit" title="Javascript / jQuery" value="Aceptar"/></span>
+        </h2>
+        
+        <!-- capa que oculta/muestra-->
+        <section id="contenedor2">
+            <ul>
+                <li>Ruben Riquelme R.</li>
+                <li>Scherezade Huancapaza M.</li>
+                <li>Mackarena Neira </li>
+                <li>Gabriel Araya G.</li>
+            </ul>
+    
+        </header>
+        </section>  
+        <div class="container">
+            <section class="d-flex justify-content-center mt-3">
+              <div class="card" style="width: 18rem;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Kobe_Bryant_8.jpg" class="card-img-top" alt="Imagen de Ruben Alfonso Riquelme Reyes" style="max-height: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Ruben Alfonso Riquelme Reyes</h5>
+                  <p class="card-text">Ruben se desempeña actualmente como administrativo de la Coca-Cola, y su horario de trabajo es como la de todos los cristianos, y viaja en metro día tras día. Está estudiando mucho para ser developer, le gustan las hamburguesas y tiene un chanchito feliz.</p>
+                 
+
+                  
+
+                  <a href="#" id="linkedin-btn" class="btn btn-primary">Linkedin</a>
+                <a href="#" id="github-btn" class="btn btn-secondary">Github</a>
+
+                <div id="linkedin-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p> <a href="https://www.linkedin.com/in/ruben-alfonso-riquelme-reyes-4a9bb92b1/" class="btn btn-primary">Linkedin</a>
+                       </p>
+                </div>
+                </div>
+
+                <div id="github-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p> <a href="https://github.com/Rubenriquelme" class="btn btn-secondary">Github</a></p></p>
+                </div>
+                </div>
+
+                      
+                </div>
+              </div>
+            </section>
+          
+            <section class="d-flex justify-content-center mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/gabrielito.jpg" class="card-img-top" alt="Imagen de Gabriel Araya G." style="max-height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Gabriel Araya G.</h5>
+                        <p class="card-text">Gabriel es de profesión químico y se ha desempeñado en diferentes actividades dentro de esta profesión, como en la automatización de almacenaje de fármacos, así como en la toma de muestra aleatoria de chequeo en la sección de importación de fármacos controlados y/o de uso libre.</p>
+                        <p class="card-text"><strong>El perfil de Químico Farmacéutico es el siguiente:</strong> Se trata de un profesional con habilidades integrales en salud y fabricación de medicamentos, así como el desarrollo e investigación de los mismos. Cuenta con conocimientos de toxicología, legislación y tecnología farmacéutica, entre otros. Este profesional está capacitado para planificar, proyectar, instalar, dirigir y controlar los procesos de producción y control de calidad, tanto de los medicamentos, como de productos fabricados por la industria cosmética.</p>
+                        <p class="card-text">Fono: 9 77 21 1570 - gabrielaraya2011@gmail.com</p>
+                        <!-- Pasar 'gabriel' y 'linkedin' como argumentos -->
+                        <a href="#" class="btn btn-primary" onclick="mostrarModal('gabriel', 'linkedin')">Linkedin</a>
+                        <!-- Pasar 'gabriel' y 'github' como argumentos -->
+                        <a href="#" class="btn btn-secondary" onclick="mostrarModal('gabriel', 'github')">Github</a>
+            
+                        <div id="linkedin-modal-gabriel" class="modal" style="display: none;">
+                            <div class="modal-content">
+                                <span class="close" onclick="cerrarModal('gabriel', 'linkedin')">&times;</span>
+                                <p><a href="https://www.linkedin.com/tu_perfil" class="btn btn-primary">Linkedin Gabriel</a></p>
+                            </div>
+                        </div>
+            
+                        <div id="github-modal-gabriel" class="modal" style="display: none;">
+                            <div class="modal-content">
+                                <span class="close" onclick="cerrarModal('gabriel', 'github')">&times;</span>
+                                <p><a href="https://github.com/gabrielcursojava/curso_java" class="btn btn-secondary">Github Gabriel</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="d-flex justify-content-center mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyXejn96a66vQqcpa6L3sY9KYEFL1HjD1pu_n5frJMzSy1GC8IPH87cEnkwx-XRCbIro&usqp=CAU" class="card-img-top" alt="Imagen de Scherezade Huancapaza M." style="max-height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Scherezade Huancapaza M.</h5>
+                        <p class="card-text">Profesora de yoga, certificada por la Federación Internacional de Yoga.</p>
+                        <p class="card-text">Con amplia experiencia en atención al cliente.</p>
+                        <p class="card-text">Autodidacta innata, siempre dispuesta a aprender, actualmente estudiante de Full JavaScript.</p>
+                        <p class="card-text">Fono: +56 937652725 - shahrazadlksmi@gmail.com</p>
+                        <a href="#" class="btn btn-primary" onclick="mostrarModal('scherezade', 'linkedin')">Linkedin</a>
+                        <a href="#" class="btn btn-secondary" onclick="mostrarModal('scherezade', 'github')">Github</a>
+            
+                        <div id="linkedin-modal-scherezade" class="modal" style="display: none;">
+                            <div class="modal-content">
+                                <span class="close" onclick="cerrarModal('scherezade', 'linkedin')">&times;</span>
+                                <p><a href="https://www.linkedin.com/in/sherezade-sherezade-496a70173/" class="btn btn-primary">♥ Linkedin Scherezade</a></p>
+                            </div>
+                        </div>
+            
+                        <div id="github-modal-scherezade" class="modal" style="display: none;">
+                            <div class="modal-content">
+                                <span class="close" onclick="cerrarModal('scherezade', 'github')">&times;</span>
+                                <p><a href="https://github.com/S" class="btn btn-secondary">♦ Github ShahrazadM</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="d-flex justify-content-center mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://t2.ea.ltmcdn.com/es/posts/5/2/6/el_pato_como_mascota_20625_600.jpg" class="card-img-top" alt="Imagen de Mackarena Neira" style="max-height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Mackarena Neira</h5>
+                        <p class="card-text">Diseñador Gráfico de la Universidad Diego Portales</p>
+                        <a href="#" class="btn btn-primary" onclick="mostrarModal('mackarena', 'linkedin')">Linkedin</a>
+                        <a href="#" class="btn btn-secondary" onclick="mostrarModal('mackarena', 'github')">Github</a>
+            
+                        <div id="linkedin-modal-mackarena" class="modal" style="display: none;">
+                            <div class="modal-content">
+                                <span class="close" onclick="cerrarModal('mackarena', 'linkedin')">&times;</span>
+                                <p><a href="https://www.linkedin.com/in/robin-neira-miranda-20b44999/" class="btn btn-primary">Linkedin</a></p>
+                            </div>
+                        </div>
+            
+                        <div id="github-modal-mackarena" class="modal" style="display: none;">
+                            <div class="modal-content">
+                                <span class="close" onclick="cerrarModal('mackarena', 'github')">&times;</span>
+                                <p><a href="https://github.com/HKred" class="btn btn-secondary">GitHub</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+          
+          <div>
+            <section>
+                <div class = "wrap">
+                    <div class = "widget">
+                        <div class= "fecha">
+                            <p id = "diaSemana" class = "diaSemana"></p>
+                            <p id  = "dia" class = "dia"></p>
+                            <p> de </p>
+                            <p id = "mes" class = "mes"></p>
+                            <p> del </p>
+                            <p id = "year" class = "year"></p>
+                        </div>
+        
+                        <div class = "reloj">
+                            <p id = "horas" class = "horas"></p>
+                            <p> : </p>
+                            <p id =  "minutos" class = "minutos"></p>
+                            <p>:</p>
+                            <div class ="caja-segundos">
+                                <p id = "ampm" class= "ampm"></p>
+                                <p id = "segundos" class = "segundos"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+          </div>
+        
+            <footer>
+                <mark>
+                    <p>El propósito de esta página es aprender a trabajar colaborativamente haciendo uso de las herramientas otorgadas en el bootcamp.</p>
+                </mark>    
+            </footer>
+        
+
+
+
+   <script src="../js/fecha.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>
+       // Mostrar modal de Linkedin al hacer clic en el botón
+       $('#linkedin-btn').click(function() {
+         $('#linkedin-modal').css('display', 'block');
+       });
+
+       // Ocultar modal de Linkedin al hacer clic en la "X" o fuera del contenido
+       $('#linkedin-modal .close, #linkedin-modal').click(function(event) {
+         if (event.target == $('#linkedin-modal .close')[0] || event.target == $('#linkedin-modal')[0]) {
+           $('#linkedin-modal').css('display', 'none');
+         }
+       });
+
+       // Mostrar modal de Github al hacer clic en el botón
+       $('#github-btn').click(function() {
+         $('#github-modal').css('display', 'block');
+       });
+
+       // Ocultar modal de Github al hacer clic en la "X" o fuera del contenido
+       $('#github-modal .close, #github-modal').click(function(event) {
+         if (event.target == $('#github-modal .close')[0] || event.target == $('#github-modal')[0]) {
+           $('#github-modal').css('display', 'none');
+         }
+       });
+   </script>
+  <script>
+    function mostrarModal(persona, tipo) {
+        // Mostrar solo el modal correspondiente al tipo especificado
+        $('#' + tipo + '-modal-' + persona).css('display', 'block');
+    }
+
+    function cerrarModal(persona, tipo) {
+        // Ocultar solo el modal correspondiente al tipo especificado
+        $('#' + tipo + '-modal-' + persona).css('display', 'none');
+    }
+</script>
+</body>
+</body>
+</html>
+
+
+
+
