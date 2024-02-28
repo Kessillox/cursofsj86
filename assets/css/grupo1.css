@@ -1,36 +1,71 @@
 /* Grupo1*/
+/*tipo (fuente) de letra*/
+.josefin-sans {
+font-family: "Josefin Sans", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: italic;
+}
 .Yesica {
     border: 10px;
-    border-style: solid;
+    border-style: dashed;
+    border-radius: 10px;
     border-color:deeppink;
     margin: 10%;
     padding: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
 }
 .Ronald {
     border: 10px;
-    border-style: solid;
+    border-style: dotted;
+    border-radius: 10px;
     border-color:salmon;
     margin: 10%;
     padding: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
 }
 .Frasiel {
     border: 10px;
-    border-style: solid;
+    border-style: double;
+    border-radius: 10px;
     border-color:palevioletred;
     margin: 10%;
     padding: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
 }
 .Cata {
     border: 10px;
     border-style: solid;
+    border-radius: 10px;
     border-color:pink;
     margin: 10%;
     padding: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
 }
 .Vane {
     border: 10px;
     border-style: solid;
+    border-radius: 10px;
     border-color:plum;
     margin: 10%;
     padding: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+}
+.bg-danger-subtle {
+    background-color: #e0aedd; /*color fondo pantalla*/
 }
