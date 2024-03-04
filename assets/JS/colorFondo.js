@@ -1,12 +1,4 @@
-var coloresFondo = [
-  "#AEC6CF", 
-  "#FF6961", 
-  "#77DD77", 
-  "#779ECB", 
-  "#F49AC2", 
-  "#CB99C9", 
-  "#CFCFC4", 
-];
+var coloresFondo = ["#8B0000", "#006400", "#00008B", "#8B008B", "#8B4513", "#2F4F4F"];
 var colorActual = 0;
 
 function cambiarColorDeFondo() {
