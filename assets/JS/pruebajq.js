@@ -2,7 +2,7 @@ $( document ).ready(function() {
     console.log( "ready!" );
 
     //Efectos
-    $( "button" ).on( "click", function() {
+    $( "#color-shift" ).on( "click", function() {
         $( "h1" ).fadeToggle( "slow", "linear" );
         
     //Color   
